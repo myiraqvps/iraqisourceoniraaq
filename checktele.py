@@ -265,13 +265,13 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await fifthon.send_message(event.chat_id, f'''خطأ مع {username}
+                    await fifthon.send_message(event.chat_id, f'''𝙒𝙍𝙊𝙉𝙂 𝙒𝙞𝙩𝙝 🔥  {username}
     الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " اجاك متاح !")
+                        await fifthon.send_message(event.chat.id, "  𝙏𝙃𝙄𝙎 𝙁𝙍𝙀𝙀 𝙏𝙍𝙔 𝙒𝙄𝙏𝙃 𝙔𝙊𝙐 ◉ !")
             else:
                 pass
             trys += 1
