@@ -219,7 +219,7 @@ async def _(event):
         ch = str(msg[2])
         choice = str(msg[1])
         trys = 0
-        await event.edit(f"حسناً سأفحص نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
+        await event.edit(f"𝙬𝙚𝙡𝙡 𝙘𝙝𝙚𝙘𝙠 𝙤𝙪𝙩 𝙩𝙮𝙥𝙚 𓅃 `{choice}` 𝙁𝙍𝙊𝙈 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 𝙊𝙉 `{ch}` , 𝘽𝙔 𝙉𝙐𝙈𝘽𝙀𝙍  `{msg[0]}` 𝙊𝙁 𝘼𝙏𝙏𝙀𝙈𝘽𝙏𝙎")
 
         @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
