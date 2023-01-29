@@ -115,7 +115,23 @@ async def _(event):
 ●▬▬▬▬๑۩۩๑▬▬▬▬▬●
 
 ''')
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.خاصيه"))
+async def _(event):
+    start = datetime.datetime.now()
+    await event.edit("جارٍ...")
+    end = datetime.datetime.now()
+    ms = (end - start).microseconds / 1000
+    await event.edit(f'''
+**ل فك الخاصية لايوجد غيرنه اليكلك دز غيرنه حول رسالته ينمنع من كلشي❤️
+@CC888 
+@X_0_6
+@I_l_I
+@P_H_R
+@z_e_1
+@F_3_3
+@G_5_G*
 
+''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
