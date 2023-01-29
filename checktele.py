@@ -265,7 +265,7 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await fifthon.send_message(event.chat_id, f'''𝙒𝙍𝙊𝙉𝙂 𝙒𝙞𝙩𝙝 🔥  {username}
+                    await fifthon.send_message(event.chat_id, f'''𝙒𝙍𝙊𝙉𝙂 𝙒𝙞𝙩𝙝 🔱  @{username}
     الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
@@ -292,7 +292,7 @@ async def _(event):
             msg = ("".join(event.text.split(maxsplit=2)[2:])).split(" ", 2)
             username = str(msg[2])
             ch = str(msg[1])
-            await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
+            await event.edit(f"𝙬𝙚𝙡𝙡 𝙘𝙝𝙚𝙘𝙠 `{username}` 𝙊𝙉 `{ch}` , بعدد `{msg[0]}` 𝙊𝙁 𝘼𝙏𝙏𝙀𝙈𝘽𝙏𝙎 !")
 
             @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
             async def _(event):
