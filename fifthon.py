@@ -148,6 +148,7 @@ async def _(event):
 𝙇𝙄𝙑𝙀 : 𝙄𝙍𝘼𝙌   
 𝙨𝙩𝙪𝙙𝙚𝙣𝙩    
 ࿇ ══━━━✥◈✥━━━══ ࿇
+
 ''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
