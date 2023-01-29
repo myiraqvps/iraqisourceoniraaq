@@ -132,7 +132,7 @@ async def _(event):
 @G_5_G 🔱
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.مطور"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.المطور"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("جارٍ...")
