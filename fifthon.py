@@ -153,6 +153,30 @@ async def _(event):
 
 ''')
 
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.سوبر"))
+async def _(event):
+    start = datetime.datetime.now()
+    await event.edit("جارٍ...")
+    end = datetime.datetime.now()
+    ms = (end - start).microseconds / 1000
+    await event.edit(f'''
+𝙏𝙃𝙀 𝙆𝙄𝙉𝙂 𝙎𝙐𝙋𝙀𝙍 𝙄𝙉 𝙏𝙀𝙇𝙀 ❂
+࿇ ══━━━━✥◈✥━━━══ ࿇
+- https://t.me/+Au-9YeWYgRA2N2Zi
+- https://t.me/+_aSr4lSZ8xw5YzMy
+- https://t.me/+ZVM0-mWOTfAzMWU0
+- https://t.me/+yFWxxT8hBIk4ZTlh
+- https://t.me/xjgjxgk
+- https://t.me/+3Ps0PTWcKnVkYTYx
+- https://t.me/+jJPr8Scd-XtkYWUy
+- https://t.me/tttffttt
+- https://t.me/+Z-C6TvKIMDJmZGJi
+- https://t.me/+5HDPPdgJyeU4OGFi
+- https://t.me/ss_iid
+- https://t.me/+tzEVV5iaHWY5Yjgy
+━━━━━━༺༻━━━━━━━
+
+''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
