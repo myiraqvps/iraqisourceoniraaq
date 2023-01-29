@@ -178,6 +178,36 @@ async def _(event):
 
 ''')
 
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.فيزا"))
+async def _(event):
+    start = datetime.datetime.now()
+    await event.edit("جارٍ...")
+    end = datetime.datetime.now()
+    ms = (end - start).microseconds / 1000
+    await event.edit(f'''
+𝙑𝙄𝙎𝘼 𝙃𝙀𝙍𝙆𝙊𝙐
+══════◄••❀••►══════
+سوي كروب وارفع بوت مشرف (@SDBB_Bot) 
+امر استخراج
+/gen 5472920000384021|11|2027|73/gen 5472920000384021|11|2027|735
+┍──━──━──┙◆┕──━──━──┑
+دولة اندونيسا ╚═════ஜ۩۞۩ஜ═════╝
+
+ Address  : Jawa Tenga
+Street: Jl Raya Kedung Mundu 3, Jawa Tengah
+ 
+City: Jawa Tengah
+ 
+State : Semarang
+ 
+Zip code: 50181
+ 
+Country Indonesia
+
+وهاذي المعلومات تبعها
+
+''')
+
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
     start = datetime.datetime.now()
