@@ -92,6 +92,17 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
         except BaseException:
             pass
 
+@sfifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تفليش"))
+async def _(event):
+    await event.delete()
+    messagelocation = event.to_id
+    async for user in sedthon.iter_participants(messagelocation):
+        user_id = user.id
+        try:
+            await sedthon.edit_permissions(messagelocation, user_id, view_messages=False)
+        except:
+            pass
+
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الاوامر"))
 async def _(event):
