@@ -156,6 +156,12 @@ async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec4)
 
+
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
+async def _(event):
+    start = datetime.datetime.now()
+    await event.edit(sec5)
+
     
 ownerhson_id = 5436645626
 @fifthon.on(events.NewMessage(outgoing=False, pattern='/start'))
