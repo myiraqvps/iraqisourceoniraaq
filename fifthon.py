@@ -114,7 +114,7 @@ async def _(event):
 ★ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙄𝙍𝘼𝙌𝙄 : @F_3_3
 ●▬▬▬▬๑۩۩๑▬▬▬▬▬●
 
-''')
+
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.خاصيه"))
 async def _(event):
     start = datetime.datetime.now()
@@ -132,14 +132,14 @@ async def _(event):
 @G_5_G 🔱
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.المطور"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.مطور"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("جارٍ...")
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-𝙄𝙍𝘼𝙌𝙄 
+
 𝙏𝙀𝙇𝙀 : @F_3_3
 𝙄𝙉𝙎𝙏𝘼 : 𝙄𝙎𝙄𝙍𝘼𝙌I
  ❦ ════ •⊰❂⊱• ════ ❦
@@ -150,6 +150,7 @@ async def _(event):
 ࿇ ══━━━✥◈✥━━━══ ࿇
 
 ''')
+
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
