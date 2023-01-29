@@ -114,6 +114,7 @@ async def _(event):
 ★ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙄𝙍𝘼𝙌𝙄 : @F_3_3
 ●▬▬▬▬๑۩۩๑▬▬▬▬▬●
 
+''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.خاصيه"))
 async def _(event):
@@ -131,6 +132,7 @@ async def _(event):
 @F_3_3 🔱
 @G_5_G 🔱
 
+''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.مطور"))
 async def _(event):
