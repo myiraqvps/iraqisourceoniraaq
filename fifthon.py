@@ -131,6 +131,23 @@ async def _(event):
 @F_3_3 🔱
 @G_5_G 🔱
 
+
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.مطور"))
+async def _(event):
+    start = datetime.datetime.now()
+    await event.edit("جارٍ...")
+    end = datetime.datetime.now()
+    ms = (end - start).microseconds / 1000
+    await event.edit(f'''
+𝙄𝙍𝘼𝙌𝙄 
+𝙏𝙀𝙇𝙀 : @F_3_3
+𝙄𝙉𝙎𝙏𝘼 : 𝙄𝙎𝙄𝙍𝘼𝙌I
+ ❦ ════ •⊰❂⊱• ════ ❦
+𝙉𝘼𝙈𝙀 : 𝘼𝙇𝙄
+𝘼𝙂𝙀 : 16
+𝙇𝙄𝙑𝙀 : 𝙄𝙍𝘼𝙌   
+𝙨𝙩𝙪𝙙𝙚𝙣𝙩    
+࿇ ══━━━✥◈✥━━━══ ࿇
 ''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
