@@ -103,7 +103,6 @@ async def _(event):
 `-- -- -- -- -- -- -- -- --`
 """
 
-''')
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.مؤقت (.*)"))
 async def spammer(event):
     reply = await event.get_reply_message()
