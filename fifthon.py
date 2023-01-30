@@ -140,7 +140,7 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
             await event.client(hmm)
         except BaseException:
        pass
-''')
+
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الاوامر"))
 async def _(event):
