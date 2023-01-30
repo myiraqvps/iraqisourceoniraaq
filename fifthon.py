@@ -209,6 +209,19 @@ Country Indonesia
 
 ''')
 
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حبشكلات"))
+async def _(event):
+    start = datetime.datetime.now()
+    await event.edit("جارٍ...")
+    end = datetime.datetime.now()
+    ms = (end - start).microseconds / 1000
+    await event.edit(f'''
+
+@TempMailBot انشاء بريد وهمي
+@SESSIONHACKABOT تهكير ترمكس 
+
+''')
+
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
     start = datetime.datetime.now()
